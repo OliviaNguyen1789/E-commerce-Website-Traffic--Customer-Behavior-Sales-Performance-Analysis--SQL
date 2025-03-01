@@ -25,15 +25,11 @@ The objectives are:
 - Understanding customer behavior.
 This analysis will help the Marketing and Sales teams make strategic, data-driven decisions to enhance business outcomes.
 
-## 📂 Dataset Description & Data Structure  
+## II. Dataset Description
 
-### 📌 Data Source  
 - Source: The eCommerce dataset is stored in a public Google BigQuery dataset.
   https://console.cloud.google.com/bigquery?project=extreme-course-435303-q8&ws=!1m5!1m4!4m3!1sbigquery-public-data!2sgoogle_analytics_sample!3sga_sessions_20170801
-- Size: (Mention the number of rows & columns)  
-- Format: (.csv, .sql, .xlsx, etc.)  
-
-### 📊 Data Structure & Relationships  
+-  Data Structure: 
  | Field Name                       | Data Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | fullVisitorId                    | STRING    | The unique visitor ID.|
