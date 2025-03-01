@@ -10,7 +10,7 @@ Tools Used: SQL
 
 ## 📑 Table of Contents  
 I.  [Introduction](#i-introduction)  
-II. [Dataset Description & Data Structure](#-dataset-description--data-structure)  
+II. [Dataset Description](#ii-dataset-description)  
 III. [Design Thinking Process](#-design-thinking-process)  
 IV. [Key Insights & Visualizations](#-key-insights--visualizations)  
 V. [Final Conclusion & Recommendations](#-final-conclusion--recommendations)
@@ -53,7 +53,9 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 
 
 
-## 📊 Key Insights & Visualizations  
+## III. Exploring the Dataset
+
+## Key Insights & Visualizations  
 
 ### 🔍 Dashboard Preview  
 
