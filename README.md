@@ -1,7 +1,4 @@
-
-Change Icon emoji 🔥🔍📘🚩 to your likings by clicking "Start" + "."
-
-# [SQL]: Explore Ecommerce Dataset  
+<img width="712" alt="Screen Shot 2025-03-02 at 11 45 03 AM" src="https://github.com/user-attachments/assets/73a7433a-6b54-496b-a7f2-b2c30972c556" /># [SQL]: Explore Ecommerce Dataset  
 Author: [Uyen Nguyen]  
 Date: September 2024  
 Tools Used: SQL 
@@ -11,7 +8,7 @@ Tools Used: SQL
 ## 📑 Table of Contents  
 I.  [Introduction](#i-introduction)  
 II. [Dataset Description](#ii-dataset-description)  
-III. [Design Thinking Process](#-design-thinking-process)  
+III. [Exploring the Dataset](#iii-exploring-the-dataset)  
 IV. [Key Insights & Visualizations](#-key-insights--visualizations)  
 V. [Final Conclusion & Recommendations](#-final-conclusion--recommendations)
 
@@ -54,6 +51,22 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 
 
 ## III. Exploring the Dataset
+In this project, I will write 08 query in Bigquery base on Google Analytics dataset
+
+### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
+
+<img width="724" alt="Screen Shot 2025-03-02 at 11 45 20 AM" src="https://github.com/user-attachments/assets/7a275cbd-0787-4af9-8094-d190d7b929c0" />
+
+<img width="664" alt="Screen Shot 2025-03-02 at 11 30 53 AM" src="https://github.com/user-attachments/assets/bc5cd16e-d9c7-4265-9ee4-1bfe7c40a618" />
+
+
+### Query 02: Bounce rate per traffic source in July 2017
+
+<img width="773" alt="Screen Shot 2025-03-02 at 11 43 04 AM" src="https://github.com/user-attachments/assets/ea39961b-0ccd-4bf9-9a59-e387cc000633" />
+
+<img width="678" alt="Screen Shot 2025-03-02 at 11 40 40 AM" src="https://github.com/user-attachments/assets/c42226cf-6aa9-42f0-b6fe-06f539c57939" />
+
+
 
 ## Key Insights & Visualizations  
 
