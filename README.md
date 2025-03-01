@@ -9,7 +9,7 @@ Tools Used: SQL
 ---
 
 ## 📑 Table of Contents  
-I.  [Introduction](#introduction)  
+I.  [Introduction](#i-introduction)  
 II. [Dataset Description & Data Structure](#-dataset-description--data-structure)  
 III. [Design Thinking Process](#-design-thinking-process)  
 IV. [Key Insights & Visualizations](#-key-insights--visualizations)  
