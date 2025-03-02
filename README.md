@@ -1,4 +1,4 @@
-<img width="712" alt="Screen Shot 2025-03-02 at 11 45 03 AM" src="https://github.com/user-attachments/assets/73a7433a-6b54-496b-a7f2-b2c30972c556" /># [SQL]: Explore Ecommerce Dataset  
+[SQL]: Explore Ecommerce Dataset  
 Author: [Uyen Nguyen]  
 Date: September 2024  
 Tools Used: SQL 
@@ -51,7 +51,6 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 
 
 ## III. Exploring the Dataset
-In this project, I will write 08 query in Bigquery base on Google Analytics dataset
 
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
 
@@ -62,10 +61,57 @@ In this project, I will write 08 query in Bigquery base on Google Analytics data
 
 ### Query 02: Bounce rate per traffic source in July 2017
 
-<img width="773" alt="Screen Shot 2025-03-02 at 11 43 04 AM" src="https://github.com/user-attachments/assets/ea39961b-0ccd-4bf9-9a59-e387cc000633" />
+<img width="752" alt="Screen Shot 2025-03-02 at 3 10 07 PM" src="https://github.com/user-attachments/assets/ff1c6040-39d9-4e3b-b85a-4c5546365955" />
 
 <img width="678" alt="Screen Shot 2025-03-02 at 11 40 40 AM" src="https://github.com/user-attachments/assets/c42226cf-6aa9-42f0-b6fe-06f539c57939" />
 
+### Query 03: Revenue by traffic source by week, by month in June 2017
+
+<img width="816" alt="Screen Shot 2025-03-02 at 2 31 36 PM" src="https://github.com/user-attachments/assets/1adb7a1f-cc38-4b17-b588-806c2e3d0468" />
+<img width="816" alt="Screen Shot 2025-03-02 at 2 33 04 PM" src="https://github.com/user-attachments/assets/cae00493-8665-4c18-9d74-e7c8b5ef3e59" />
+
+
+<img width="551" alt="Screen Shot 2025-03-02 at 2 28 01 PM" src="https://github.com/user-attachments/assets/251d343e-2e23-4f1e-ba9b-835e66cd09e5" />
+
+
+
+### Query 04: Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
+
+
+<img width="934" alt="Screen Shot 2025-03-02 at 2 56 17 PM" src="https://github.com/user-attachments/assets/f31ff62e-e88e-4ce0-8f43-4e41eb345745" />
+<img width="975" alt="Screen Shot 2025-03-02 at 2 56 47 PM" src="https://github.com/user-attachments/assets/4d329d71-1ac9-4bee-914f-d86bcbad92e8" />
+
+<img width="779" alt="Screen Shot 2025-03-02 at 2 57 44 PM" src="https://github.com/user-attachments/assets/8185796a-bb75-4a5e-b90d-f35e83a4e6f3" />
+
+
+
+### Query 05: Average number of transactions per user that made a purchase in July 2017
+<img width="1064" alt="Screen Shot 2025-03-02 at 2 46 10 PM" src="https://github.com/user-attachments/assets/beceb328-81ea-427b-a73e-5a1205897c76" />
+
+<img width="568" alt="Screen Shot 2025-03-02 at 2 47 11 PM" src="https://github.com/user-attachments/assets/19dec8d9-5f63-4745-a074-4a0755306802" />
+
+
+
+### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
+<img width="1043" alt="Screen Shot 2025-03-02 at 2 43 51 PM" src="https://github.com/user-attachments/assets/89901927-3b7d-4896-8104-33f8c2870ba3" />
+
+<img width="525" alt="Screen Shot 2025-03-02 at 2 45 21 PM" src="https://github.com/user-attachments/assets/f5424a3b-3d22-4720-bc43-77a10aa0bc93" />
+
+
+
+
+
+### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017
+
+<img width="845" alt="Screen Shot 2025-03-02 at 3 06 56 PM" src="https://github.com/user-attachments/assets/1c3441fb-8ad8-40c0-b014-98f7d72194c8" />
+
+
+<img width="642" alt="Screen Shot 2025-03-02 at 2 42 58 PM" src="https://github.com/user-attachments/assets/156fd04f-1387-4fbf-b2af-b766fe0be36b" />
+
+### Query 08: Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017
+<img width="1065" alt="Screen Shot 2025-03-02 at 3 04 53 PM" src="https://github.com/user-attachments/assets/77458655-87a3-483c-b910-6cf7880615c5" />
+
+<img width="938" alt="Screen Shot 2025-03-02 at 2 38 40 PM" src="https://github.com/user-attachments/assets/59363f95-36b9-4e3a-8ae7-c80d8bc7fe33" />
 
 
 ## Key Insights & Visualizations  
