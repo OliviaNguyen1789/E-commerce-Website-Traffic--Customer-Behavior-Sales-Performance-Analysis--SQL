@@ -20,11 +20,13 @@ This project analyzes an e-commerce dataset using advanced SQL techniques on Goo
 The objectives are:
 - Improving the company's revenue.
 - Understanding customer behavior.
+
 This analysis will help the Marketing and Sales teams make strategic, data-driven decisions to enhance business outcomes.
 
 ## II. Dataset Description
 
-- Source: The eCommerce dataset is stored in a public Google BigQuery dataset.
+- Source: The e-commerce dataset is stored in a public Google BigQuery dataset.
+  
   https://console.cloud.google.com/bigquery?project=extreme-course-435303-q8&ws=!1m5!1m4!4m3!1sbigquery-public-data!2sgoogle_analytics_sample!3sga_sessions_20170801
 -  Data Structure:
   
@@ -54,24 +56,27 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
 
-<img width="724" alt="Screen Shot 2025-03-02 at 11 45 20 AM" src="https://github.com/user-attachments/assets/7a275cbd-0787-4af9-8094-d190d7b929c0" />
+<img width="635" alt="Screen Shot 2025-03-03 at 6 29 52 AM" src="https://github.com/user-attachments/assets/548e3f83-f046-46b2-b8c3-8b384a3001d4" />
 
-<img width="664" alt="Screen Shot 2025-03-02 at 11 30 53 AM" src="https://github.com/user-attachments/assets/bc5cd16e-d9c7-4265-9ee4-1bfe7c40a618" />
+<img width="751" alt="Screen Shot 2025-03-03 at 6 34 29 AM" src="https://github.com/user-attachments/assets/ee3368da-de50-4528-ae1b-f4668217c140" />
 
+The results indicate that website traffic remained steady in Q1 2017, with a significant rise in transactions in March (933), suggesting either enhanced conversion rates or seasonal influences.
 
 ### Query 02: Bounce rate per traffic source in July 2017
 
 <img width="752" alt="Screen Shot 2025-03-02 at 3 10 07 PM" src="https://github.com/user-attachments/assets/ff1c6040-39d9-4e3b-b85a-4c5546365955" />
 
-<img width="678" alt="Screen Shot 2025-03-02 at 11 40 40 AM" src="https://github.com/user-attachments/assets/c42226cf-6aa9-42f0-b6fe-06f539c57939" />
+<img width="672" alt="Screen Shot 2025-03-03 at 6 41 33 AM" src="https://github.com/user-attachments/assets/93b104cf-9237-4321-8e20-656918f941e0" />
+
+The majority of traffic (80%) comes from Google and direct sources. Traffic from Google is twice that of direct sources, but the bounce rate for direct traffic is lower (43% vs. 52%). 
 
 ### Query 03: Revenue by traffic source by week, by month in June 2017
 
 <img width="816" alt="Screen Shot 2025-03-02 at 2 31 36 PM" src="https://github.com/user-attachments/assets/1adb7a1f-cc38-4b17-b588-806c2e3d0468" />
+
 <img width="816" alt="Screen Shot 2025-03-02 at 2 33 04 PM" src="https://github.com/user-attachments/assets/cae00493-8665-4c18-9d74-e7c8b5ef3e59" />
 
-
-<img width="551" alt="Screen Shot 2025-03-02 at 2 28 01 PM" src="https://github.com/user-attachments/assets/251d343e-2e23-4f1e-ba9b-835e66cd09e5" />
+<img width="552" alt="Screen Shot 2025-03-03 at 7 00 52 AM" src="https://github.com/user-attachments/assets/af661e0a-af04-4b7a-8b9e-cd5ca8141812" />
 
 
 
