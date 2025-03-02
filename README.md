@@ -56,70 +56,74 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
 
-<img width="635" alt="Screen Shot 2025-03-03 at 6 29 52 AM" src="https://github.com/user-attachments/assets/548e3f83-f046-46b2-b8c3-8b384a3001d4" />
+<img width="642" alt="Screen Shot 2025-03-03 at 10 17 40 AM" src="https://github.com/user-attachments/assets/90863a21-ac42-4f00-8c05-30ef29471cc3" />
 
-<img width="751" alt="Screen Shot 2025-03-03 at 6 34 29 AM" src="https://github.com/user-attachments/assets/ee3368da-de50-4528-ae1b-f4668217c140" />
+<img width="644" alt="Screen Shot 2025-03-03 at 10 36 35 AM" src="https://github.com/user-attachments/assets/72fa1185-5867-44fb-9a03-7e4874374f92" />
+
 
 The results indicate that website traffic remained steady in Q1 2017, with a significant rise in transactions in March (933), suggesting either enhanced conversion rates or seasonal influences.
 
 ### Query 02: Bounce rate per traffic source in July 2017
 
-<img width="752" alt="Screen Shot 2025-03-02 at 3 10 07 PM" src="https://github.com/user-attachments/assets/ff1c6040-39d9-4e3b-b85a-4c5546365955" />
+<img width="676" alt="Screen Shot 2025-03-03 at 10 19 39 AM" src="https://github.com/user-attachments/assets/d7ecc565-56a1-4710-a104-d7e945a62334" />
 
-<img width="672" alt="Screen Shot 2025-03-03 at 6 41 33 AM" src="https://github.com/user-attachments/assets/93b104cf-9237-4321-8e20-656918f941e0" />
+<img width="658" alt="Screen Shot 2025-03-03 at 10 37 27 AM" src="https://github.com/user-attachments/assets/379c7391-77b1-405f-86fe-8e696e93a860" />
 
 The majority of traffic (80%) comes from Google and direct sources. Traffic from Google is twice that of direct sources, but the bounce rate for direct traffic is lower (43% vs. 52%). 
 
 ### Query 03: Revenue by traffic source by week, by month in June 2017
 
-<img width="816" alt="Screen Shot 2025-03-02 at 2 31 36 PM" src="https://github.com/user-attachments/assets/1adb7a1f-cc38-4b17-b588-806c2e3d0468" />
+<img width="674" alt="Screen Shot 2025-03-03 at 10 24 02 AM" src="https://github.com/user-attachments/assets/99def861-1b85-4b42-ad6c-4ddd54ed65ac" />
 
-<img width="816" alt="Screen Shot 2025-03-02 at 2 33 04 PM" src="https://github.com/user-attachments/assets/cae00493-8665-4c18-9d74-e7c8b5ef3e59" />
+<img width="682" alt="Screen Shot 2025-03-03 at 10 24 30 AM" src="https://github.com/user-attachments/assets/f577cf45-0d75-4fcb-abbb-b32c72ec9b34" />
 
-<img width="552" alt="Screen Shot 2025-03-03 at 7 00 52 AM" src="https://github.com/user-attachments/assets/af661e0a-af04-4b7a-8b9e-cd5ca8141812" />
+<img width="470" alt="Screen Shot 2025-03-03 at 10 38 14 AM" src="https://github.com/user-attachments/assets/ae8aaca2-0f91-493e-ad0e-8088454c9f27" />
+
 
 Regarding revenue, direct traffic consistently drives the highest value weekly and monthly, while Google rank as the second-largest source.
 
 ### Query 04: Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
 
-<img width="719" alt="Screen Shot 2025-03-03 at 7 18 13 AM" src="https://github.com/user-attachments/assets/79c98182-52fd-4bfa-9a75-deb300bc2ae4" />
+<img width="645" alt="Screen Shot 2025-03-03 at 10 25 44 AM" src="https://github.com/user-attachments/assets/a1560a5f-48d0-4682-b70b-fb317acad941" />
 
-<img width="717" alt="Screen Shot 2025-03-03 at 7 19 08 AM" src="https://github.com/user-attachments/assets/a896241a-42cc-4ce0-ba34-cf6ce6549eaa" />
+<img width="642" alt="Screen Shot 2025-03-03 at 10 26 19 AM" src="https://github.com/user-attachments/assets/a7ef29fd-3d7e-470a-90b4-b86cd49fa0d3" />
 
-<img width="779" alt="Screen Shot 2025-03-02 at 2 57 44 PM" src="https://github.com/user-attachments/assets/8185796a-bb75-4a5e-b90d-f35e83a4e6f3" />
+<img width="650" alt="Screen Shot 2025-03-03 at 10 38 31 AM" src="https://github.com/user-attachments/assets/f0f8ff39-d229-45aa-afcd-94500af1f5b1" />
+
 
 On average, the number of pageviews for non-purchasers is double that of purchasers. In July, both groups experienced a sharp increase in average pageviews, with purchasers experiencing a larger relative rise. 
 
 Non-purchasers tend to browse many pages without making a purchase, indicating potential issues with usability, pricing, or the checkout process.
 
 ### Query 05: Average number of transactions per user that made a purchase in July 2017
-<img width="1064" alt="Screen Shot 2025-03-02 at 2 46 10 PM" src="https://github.com/user-attachments/assets/beceb328-81ea-427b-a73e-5a1205897c76" />
 
-<img width="568" alt="Screen Shot 2025-03-02 at 2 47 11 PM" src="https://github.com/user-attachments/assets/19dec8d9-5f63-4745-a074-4a0755306802" />
+<img width="659" alt="Screen Shot 2025-03-03 at 10 27 32 AM" src="https://github.com/user-attachments/assets/a4c7e4d8-68c3-484a-8aac-7d7fe4f5f5c3" />
+
+<img width="499" alt="Screen Shot 2025-03-03 at 10 38 49 AM" src="https://github.com/user-attachments/assets/04e76e46-34a3-4648-aa34-84da0a9f2304" />
 
 
 
 ### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
-<img width="1043" alt="Screen Shot 2025-03-02 at 2 43 51 PM" src="https://github.com/user-attachments/assets/89901927-3b7d-4896-8104-33f8c2870ba3" />
 
-<img width="525" alt="Screen Shot 2025-03-02 at 2 45 21 PM" src="https://github.com/user-attachments/assets/f5424a3b-3d22-4720-bc43-77a10aa0bc93" />
+<img width="654" alt="Screen Shot 2025-03-03 at 10 29 04 AM" src="https://github.com/user-attachments/assets/862304d9-02dc-42fc-97c9-a86f91b0caef" />
 
+<img width="460" alt="Screen Shot 2025-03-03 at 10 39 04 AM" src="https://github.com/user-attachments/assets/ceef365d-cdcf-4aaa-998c-34b4a6723e45" />
 
 
 
 
 ### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017
 
-<img width="845" alt="Screen Shot 2025-03-02 at 3 06 56 PM" src="https://github.com/user-attachments/assets/1c3441fb-8ad8-40c0-b014-98f7d72194c8" />
+<img width="735" alt="Screen Shot 2025-03-03 at 10 30 28 AM" src="https://github.com/user-attachments/assets/7ac32662-1608-499d-966a-2ea7f03cc6fe" />
 
+<img width="539" alt="Screen Shot 2025-03-03 at 10 39 32 AM" src="https://github.com/user-attachments/assets/c6984b1d-2d63-485a-9400-0df2febdc23e" />
 
-<img width="642" alt="Screen Shot 2025-03-02 at 2 42 58 PM" src="https://github.com/user-attachments/assets/156fd04f-1387-4fbf-b2af-b766fe0be36b" />
 
 ### Query 08: Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017
-<img width="1065" alt="Screen Shot 2025-03-02 at 3 04 53 PM" src="https://github.com/user-attachments/assets/77458655-87a3-483c-b910-6cf7880615c5" />
 
-<img width="938" alt="Screen Shot 2025-03-02 at 2 38 40 PM" src="https://github.com/user-attachments/assets/59363f95-36b9-4e3a-8ae7-c80d8bc7fe33" />
+<img width="964" alt="Screen Shot 2025-03-03 at 10 33 57 AM" src="https://github.com/user-attachments/assets/8d058741-1dbc-4897-be5b-e03257bb99d6" />
 
+<img width="956" alt="Screen Shot 2025-03-03 at 10 40 03 AM" src="https://github.com/user-attachments/assets/9e7b1445-5d2d-4cc2-83c7-dd0e132baf9f" />
 
 ## Key Insights & Visualizations  
 
