@@ -78,17 +78,19 @@ The majority of traffic (80%) comes from Google and direct sources. Traffic from
 
 <img width="552" alt="Screen Shot 2025-03-03 at 7 00 52 AM" src="https://github.com/user-attachments/assets/af661e0a-af04-4b7a-8b9e-cd5ca8141812" />
 
-
+Regarding revenue, direct traffic consistently drives the highest value weekly and monthly, while Google rank as the second-largest source.
 
 ### Query 04: Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
 
+<img width="719" alt="Screen Shot 2025-03-03 at 7 18 13 AM" src="https://github.com/user-attachments/assets/79c98182-52fd-4bfa-9a75-deb300bc2ae4" />
 
-<img width="934" alt="Screen Shot 2025-03-02 at 2 56 17 PM" src="https://github.com/user-attachments/assets/f31ff62e-e88e-4ce0-8f43-4e41eb345745" />
-<img width="975" alt="Screen Shot 2025-03-02 at 2 56 47 PM" src="https://github.com/user-attachments/assets/4d329d71-1ac9-4bee-914f-d86bcbad92e8" />
+<img width="717" alt="Screen Shot 2025-03-03 at 7 19 08 AM" src="https://github.com/user-attachments/assets/a896241a-42cc-4ce0-ba34-cf6ce6549eaa" />
 
 <img width="779" alt="Screen Shot 2025-03-02 at 2 57 44 PM" src="https://github.com/user-attachments/assets/8185796a-bb75-4a5e-b90d-f35e83a4e6f3" />
 
+On average, the number of pageviews for non-purchasers is double that of purchasers. In July, both groups experienced a sharp increase in average pageviews, with purchasers experiencing a larger relative rise. 
 
+Non-purchasers tend to browse many pages without making a purchase, indicating potential issues with usability, pricing, or the checkout process.
 
 ### Query 05: Average number of transactions per user that made a purchase in July 2017
 <img width="1064" alt="Screen Shot 2025-03-02 at 2 46 10 PM" src="https://github.com/user-attachments/assets/beceb328-81ea-427b-a73e-5a1205897c76" />
