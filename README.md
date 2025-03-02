@@ -6,11 +6,10 @@ Tools Used: SQL
 ---
 
 ## 📑 Table of Contents  
-I.  [Introduction](#i-introduction)  
+I. [Introduction](#i-introduction)  
 II. [Dataset Description](#ii-dataset-description)  
 III. [Exploring the Dataset](#iii-exploring-the-dataset)  
-IV. [Key Insights & Visualizations](#-key-insights--visualizations)  
-V. [Final Conclusion & Recommendations](#-final-conclusion--recommendations)
+IV. [Final Conclusion & Recommendations](#iv-final-conclusion--recommendations)
 
 ---
 
@@ -19,7 +18,7 @@ V. [Final Conclusion & Recommendations](#-final-conclusion--recommendations)
 This project analyzes an e-commerce dataset using advanced SQL techniques on Google BigQuery, including sliding windows, CTEs, and date-time manipulation.
 The objectives are:
 - Improving the company's revenue.
-- Understanding customer behavior.
+- Understanding customer behavior to optimize conversion rates 
 
 This analysis will help the Marketing and Sales teams make strategic, data-driven decisions to enhance business outcomes.
 
@@ -61,7 +60,7 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 <img width="644" alt="Screen Shot 2025-03-03 at 10 36 35 AM" src="https://github.com/user-attachments/assets/72fa1185-5867-44fb-9a03-7e4874374f92" />
 
 
-The results indicate that website traffic remained steady in Q1 2017, with a significant rise in transactions in March (933), suggesting either enhanced conversion rates or seasonal influences.
+The results indicate that website traffic witnessed a significant rise in March (933), suggesting either enhanced conversion rates or seasonal influences.
 
 ### Query 02: Bounce rate per traffic source in July 2017
 
@@ -101,7 +100,7 @@ Non-purchasers tend to browse many pages without making a purchase, indicating p
 
 <img width="499" alt="Screen Shot 2025-03-03 at 10 38 49 AM" src="https://github.com/user-attachments/assets/04e76e46-34a3-4648-aa34-84da0a9f2304" />
 
-
+On average, users who made a purchase in July 2017 completed 4.16 transactions.
 
 ### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
 
@@ -109,7 +108,7 @@ Non-purchasers tend to browse many pages without making a purchase, indicating p
 
 <img width="460" alt="Screen Shot 2025-03-03 at 10 39 04 AM" src="https://github.com/user-attachments/assets/ceef365d-cdcf-4aaa-998c-34b4a6723e45" />
 
-
+In July 2017, purchasers spent an average of $43.86 per session. This figure offers valuable insights into website performance and consumer spending behaviors. 
 
 
 ### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017
@@ -118,6 +117,10 @@ Non-purchasers tend to browse many pages without making a purchase, indicating p
 
 <img width="539" alt="Screen Shot 2025-03-03 at 10 39 32 AM" src="https://github.com/user-attachments/assets/c6984b1d-2d63-485a-9400-0df2febdc23e" />
 
+In July 2017, an analysis of customer behavior revealed that individuals who purchased the YouTube Men's Vintage Henley also showed a strong preference for other Google-branded casual wear and accessories, particularly sunglasses. 
+
+This trend indicates a high level of brand loyalty among customers who use Google's product lines, including Google, YouTube, and Android.
+
 
 ### Query 08: Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017
 
@@ -125,38 +128,19 @@ Non-purchasers tend to browse many pages without making a purchase, indicating p
 
 <img width="956" alt="Screen Shot 2025-03-03 at 10 40 03 AM" src="https://github.com/user-attachments/assets/9e7b1445-5d2d-4cc2-83c7-dd0e132baf9f" />
 
-## Key Insights & Visualizations  
+Between January and March 2017, conversion rates from product views to add-to-cart actions and purchases improved steadily, even though there was a slight decline in the number of products viewed. March experienced the highest engagement, with a 37.29% add-to-cart rate and a 12.64% purchase rate. This enhanced efficiency in converting browsers to buyers may result from improved marketing strategies or a better user experience.
 
-### 🔍 Dashboard Preview  
+## IV. Final Conclusion & Recommendations 
 
-#### 1️⃣ Dashboard 1 Preview  
-👉🏻 Insert Power BI dashboard screenshots here  
+This analyis offer an insight into customer behavior, sales pattern, and website performance, thereby enabling business to dentify effective marketing and sales trategies to optimize their performance. Particularly, this e-commerce company can apply below recommendations to increase their revenue:
 
-📌 Analysis 1:  
-- Observation: _Describe trends, key metrics, and patterns._  
-- Recommendation: _Suggest actions based on insights._  
+- Improving customer's experience via improving website' usability, checkout process.. since this could lead to higher conversion rates and lower bounce rate.
+- Boosting cross-selling opportunities among branded items.
+- Identifying marketing channels that attract the most profitable visitors (Google, direct), facilitating the optimization of marketing strategies and budget distribution.
 
-#### 2️⃣ Dashboard 2 Preview  
-👉🏻 Insert Power BI dashboard screenshots here
+Overall, by leveraging big data analytics, the project provides a foundation for data-driven decision-making, enabling the business to enhance their performance and growth in the competitive e-commerce landscape.
 
-📌 Analysis 2:   
-- Observation: _Describe trends, key metrics, and patterns._  
-- Recommendation: _Suggest actions based on insights._  
 
-#### 3️⃣ Dashboard 3 Preview  
-👉🏻 Insert Power BI dashboard screenshots here  
 
-📌 Analysis 3:  
-- Observation: _Describe trends, key metrics, and patterns._  
-- Recommendation: _Suggest actions based on insights._  
 
----
 
-## 🔎 Final Conclusion & Recommendations  
-
-👉🏻 Based on the insights and findings above, we would recommend the [stakeholder team] to consider the following:  
-
-📌 Key Takeaways:  
-✔️ Recommendation 1  
-✔️ Recommendation 2  
-✔️ Recommendation 3
