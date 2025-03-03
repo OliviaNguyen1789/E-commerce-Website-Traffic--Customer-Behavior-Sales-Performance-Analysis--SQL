@@ -132,15 +132,10 @@ Between January and March 2017, conversion rates from product views to add-to-ca
 
 ## IV. Final Conclusion & Recommendations 
 
-This analyis offer an insight into customer behavior, sales pattern, and website performance, thereby enabling business to dentify effective marketing and sales trategies to optimize their performance. Particularly, this e-commerce company can apply below recommendations to increase their revenue:
+This analysis offers valuable insights into customer behavior, sales patterns, and website performance, enabling businesses to identify effective marketing and sales strategies to optimize their performance. To enhance revenue, the following recommendations are proposed:
 
-- Improving customer's experience via improving website' usability, checkout process.. since this could lead to higher conversion rates and lower bounce rate.
+- Enhancing customer's experience by improving website' usability, checkout process.. since this could lead to higher conversion rates and lower bounce rate.
 - Boosting cross-selling opportunities among branded items.
 - Identifying marketing channels that attract the most profitable visitors (Google, direct), facilitating the optimization of marketing strategies and budget distribution.
 
-Overall, by leveraging big data analytics, the project provides a foundation for data-driven decision-making, enabling the business to enhance their performance and growth in the competitive e-commerce landscape.
-
-
-
-
-
+By leveraging big data analytics, businesses can make data-driven decisions, enhancing their performance and fostering their growth.
