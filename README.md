@@ -25,8 +25,7 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 ## II. Dataset Description
 
 - Source: The e-commerce dataset is stored in a public Google BigQuery dataset.
-  
-  https://console.cloud.google.com/bigquery?project=extreme-course-435303-q8&ws=!1m5!1m4!4m3!1sbigquery-public-data!2sgoogle_analytics_sample!3sga_sessions_20170801
+  To access the dataset, we log in to Google Cloud Platform, navigate to the BigQuery console and enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions".
 -  Data Structure:
   
   | Field Name                       | Data Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
