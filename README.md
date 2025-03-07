@@ -1,4 +1,4 @@
-[SQL]: Explore Ecommerce Dataset  
+# [SQL]: Explore Ecommerce Dataset  
 Author: [Uyen Nguyen]  
 Date: September 2024  
 Tools Used: SQL 
