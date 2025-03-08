@@ -54,80 +54,222 @@ This analysis will help the Marketing and Sales teams make strategic, data-drive
 
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
 
-<img width="642" alt="Screen Shot 2025-03-03 at 10 17 40 AM" src="https://github.com/user-attachments/assets/90863a21-ac42-4f00-8c05-30ef29471cc3" />
-
+```sql
+SELECT 
+      FORMAT_DATE('%Y%m', PARSE_DATE('%Y%m%d',date)) AS month
+      ,SUM(totals.visits) AS visits
+      ,SUM(totals.pageviews) AS pageviews
+      ,SUM(totals.transactions) AS transactions
+      ,ROUND(SUM(totals.totalTransactionRevenue/1000000),2) AS revenue
+  FROM `bigquery-public-data.google_analytics_sample.ga_sessions_2017*`
+  WHERE _TABLE_SUFFIX BETWEEN '0101' AND '0331'
+  GROUP BY 1
+  ORDER BY 1;
+```
 <img width="644" alt="Screen Shot 2025-03-03 at 10 36 35 AM" src="https://github.com/user-attachments/assets/72fa1185-5867-44fb-9a03-7e4874374f92" />
 
-
-The results indicate that website traffic witnessed a significant rise in March (933), suggesting either enhanced conversion rates or seasonal influences.
+🚀 The results indicate that website traffic witnessed a significant rise in March (933), suggesting either enhanced conversion rates or seasonal influences.
 
 ### Query 02: Bounce rate per traffic source in July 2017
 
-<img width="676" alt="Screen Shot 2025-03-03 at 10 19 39 AM" src="https://github.com/user-attachments/assets/d7ecc565-56a1-4710-a104-d7e945a62334" />
+```sql
+SELECT
+    trafficSource.source AS source,
+    SUM(totals.visits) AS total_visits,
+    SUM(totals.Bounces) AS total_no_of_bounces,
+    ROUND(SUM(totals.Bounces)/SUM(totals.visits)* 100.00,2) AS bounce_rate
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201707*`
+GROUP BY 1
+ORDER BY 2 DESC;
+```
 
 <img width="658" alt="Screen Shot 2025-03-03 at 10 37 27 AM" src="https://github.com/user-attachments/assets/379c7391-77b1-405f-86fe-8e696e93a860" />
 
-The majority of traffic (80%) comes from Google and direct sources. Traffic from Google is twice that of direct sources, but the bounce rate for direct traffic is lower (43% vs. 52%). 
+🚀 The majority of traffic (80%) comes from Google and direct sources. Traffic from Google is twice that of direct sources, but the bounce rate for direct traffic is lower (43% vs. 52%). 
 
 ### Query 03: Revenue by traffic source by week, by month in June 2017
 
-<img width="674" alt="Screen Shot 2025-03-03 at 10 24 02 AM" src="https://github.com/user-attachments/assets/99def861-1b85-4b42-ad6c-4ddd54ed65ac" />
+```sql
+WITH monthly_revenue AS (
+    SELECT 
+        'Month' AS time_type
+        ,FORMAT_DATE('%Y%m', PARSE_DATE('%Y%m%d',date)) AS time
+        ,trafficSource.source AS source
+        ,ROUND(SUM(product.productRevenue)/1000000, 2) AS revenue
+    FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201706*`
+        ,UNNEST  (hits) AS hits
+        ,UNNEST (hits.product) AS product
+    WHERE product.productRevenue IS NOT NULL
+    GROUP BY  1, 2, 3
+    ORDER BY 3
+)
+, weekly_revenue AS (
+    SELECT
+        'Week' AS time_type
+        ,FORMAT_DATE('%Y%W', PARSE_DATE('%Y%m%d',date)) AS time
+        ,trafficSource.source AS source
+        ,ROUND(SUM(product.productRevenue)/1000000, 2) AS revenue
+    FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201706*`
+        ,UNNEST (hits) AS hits
+        ,UNNEST (hits.product) AS product
+    WHERE product.productRevenue IS NOT NULL
+    GROUP BY 1, 2, 3
+    ORDER BY 3, 2
+)
 
-<img width="682" alt="Screen Shot 2025-03-03 at 10 24 30 AM" src="https://github.com/user-attachments/assets/f577cf45-0d75-4fcb-abbb-b32c72ec9b34" />
+  SELECT *
+  FROM monthly_revenue
+  UNION ALL
+  SELECT *
+  FROM weekly_revenue
+  ORDER BY revenue DESC;
+```
 
 <img width="470" alt="Screen Shot 2025-03-03 at 10 38 14 AM" src="https://github.com/user-attachments/assets/ae8aaca2-0f91-493e-ad0e-8088454c9f27" />
 
-
-Regarding revenue, direct traffic consistently drives the highest value weekly and monthly, while Google rank as the second-largest source.
+🚀 Regarding revenue, direct traffic consistently drives the highest value weekly and monthly, while Google rank as the second-largest source.
 
 ### Query 04: Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
 
-<img width="645" alt="Screen Shot 2025-03-03 at 10 25 44 AM" src="https://github.com/user-attachments/assets/a1560a5f-48d0-4682-b70b-fb317acad941" />
+```sql
+WITH
+purchaser_data AS(
+  SELECT
+      FORMAT_DATE("%Y%m",PARSE_DATE("%Y%m%d",date)) as month,
+      ROUND(SUM(totals.pageviews)/COUNT(DISTINCT fullvisitorid),2) AS avg_pageviews_purchase,
+  FROM `bigquery-public-data.google_analytics_sample.ga_sessions_2017*`
+        ,UNNEST(hits) hits
+        ,UNNEST(product) product
+  WHERE  _table_suffix BETWEEN '0601' AND '0731'
+  AND totals.transactions>=1
+  AND product.productRevenue IS NOT NULL
+  GROUP BY 1
+),
 
-<img width="642" alt="Screen Shot 2025-03-03 at 10 26 19 AM" src="https://github.com/user-attachments/assets/a7ef29fd-3d7e-470a-90b4-b86cd49fa0d3" />
+non_purchaser_data AS(
+  SELECT
+      FORMAT_DATE("%Y%m",PARSE_DATE("%Y%m%d",date)) as month,
+      ROUND(SUM(totals.pageviews)/COUNT(DISTINCT fullvisitorid),2) AS avg_pageviews_non_purchase,
+  FROM `bigquery-public-data.google_analytics_sample.ga_sessions_2017*`
+       ,UNNEST(hits) hits
+       ,UNNEST(product) product
+  WHERE _table_suffix BETWEEN '0601' AND '0731'
+  AND totals.transactions IS NULL
+  AND product.productRevenue IS NULL
+  GROUP BY 1
+)
+
+SELECT
+    pd.*,
+    avg_pageviews_non_purchase
+FROM purchaser_data pd
+FULL JOIN non_purchaser_data USING(month)
+ORDER BY pd.month;
+```
 
 <img width="650" alt="Screen Shot 2025-03-03 at 10 38 31 AM" src="https://github.com/user-attachments/assets/f0f8ff39-d229-45aa-afcd-94500af1f5b1" />
 
+🚀 On average, the number of pageviews for non-purchasers is double that of purchasers. In July, both groups experienced a sharp increase in average pageviews, with purchasers experiencing a larger relative rise. 
 
-On average, the number of pageviews for non-purchasers is double that of purchasers. In July, both groups experienced a sharp increase in average pageviews, with purchasers experiencing a larger relative rise. 
-
-Non-purchasers tend to browse many pages without making a purchase, indicating potential issues with usability, pricing, or the checkout process.
+🚀 Non-purchasers tend to browse many pages without making a purchase, indicating potential issues with usability, pricing, or the checkout process.
 
 ### Query 05: Average number of transactions per user that made a purchase in July 2017
 
-<img width="659" alt="Screen Shot 2025-03-03 at 10 27 32 AM" src="https://github.com/user-attachments/assets/a4c7e4d8-68c3-484a-8aac-7d7fe4f5f5c3" />
+```sql
+SELECT
+      FORMAT_DATE('%Y%m',PARSE_DATE('%Y%m%d',date)) AS Month
+      ,ROUND(SUM(totals.transactions)/COUNT (DISTINCT fullVisitorId),4) AS Avg_total_transactions_per_user
+  FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201707*`
+      ,UNNEST (hits) AS hits
+      ,UNNEST (hits.product) AS product
+  WHERE eCommerceAction.action_type = '6'
+        AND product.productRevenue IS NOT NULL
+  GROUP BY 1;
+```
 
 <img width="499" alt="Screen Shot 2025-03-03 at 10 38 49 AM" src="https://github.com/user-attachments/assets/04e76e46-34a3-4648-aa34-84da0a9f2304" />
 
-On average, users who made a purchase in July 2017 completed 4.16 transactions.
+🚀 On average, users who made a purchase in July 2017 completed 4.16 transactions.
 
 ### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
 
-<img width="654" alt="Screen Shot 2025-03-03 at 10 29 04 AM" src="https://github.com/user-attachments/assets/862304d9-02dc-42fc-97c9-a86f91b0caef" />
+```sql
+SELECT 
+      FORMAT_DATE('%Y%m',PARSE_DATE('%Y%m%d',date)) AS Month
+      ,ROUND(SUM(product.productRevenue)/SUM(totals.visits)/1000000,2) AS avg_revenue_by_user_per_visit
+  FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201707*`
+      ,UNNEST (hits) AS hits
+      ,UNNEST (hits.product) AS product
+  WHERE totals.transactions IS NOT NULL 
+        AND product.productRevenue IS NOT NULL
+  GROUP BY 1;
+```
 
 <img width="460" alt="Screen Shot 2025-03-03 at 10 39 04 AM" src="https://github.com/user-attachments/assets/ceef365d-cdcf-4aaa-998c-34b4a6723e45" />
 
-In July 2017, purchasers spent an average of $43.86 per session. This figure offers valuable insights into website performance and consumer spending behaviors. 
+🚀 In July 2017, purchasers spent an average of $43.86 per session. This figure offers valuable insights into website performance and consumer spending behaviors. 
 
 
 ### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017
 
-<img width="735" alt="Screen Shot 2025-03-03 at 10 30 28 AM" src="https://github.com/user-attachments/assets/7ac32662-1608-499d-966a-2ea7f03cc6fe" />
+```sql
+SELECT 
+      product.v2ProductName AS other_purchased_products
+      ,sum(product.productQuantity) AS quantity
+  FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201707*`
+        ,UNNEST (hits) AS hits
+        ,UNNEST (hits.product) AS product
+  WHERE product.productRevenue IS NOT NULL 
+      AND product.v2ProductName <> "YouTube Men's Vintage Henley"
+      AND fullVisitorId IN (
+            SELECT 
+                DISTINCT fullVisitorId
+            FROM `bigquery-public-data.google_analytics_sample.ga_sessions_201707*`
+                ,UNNEST (hits) AS hits
+                ,UNNEST (hits.product) AS product
+            WHERE v2ProductName = "YouTube Men's Vintage Henley"
+            AND  product.productRevenue IS NOT NULL 
+            ORDER BY fullVisitorId
+        )
+  GROUP BY 1
+  ORDER BY 2 DESC;
+```
 
 <img width="539" alt="Screen Shot 2025-03-03 at 10 39 32 AM" src="https://github.com/user-attachments/assets/c6984b1d-2d63-485a-9400-0df2febdc23e" />
 
-In July 2017, an analysis of customer behavior revealed that individuals who purchased the YouTube Men's Vintage Henley also showed a strong preference for other Google-branded casual wear and accessories, particularly sunglasses. 
+🚀 In July 2017, an analysis of customer behavior revealed that individuals who purchased the YouTube Men's Vintage Henley also showed a strong preference for other Google-branded casual wear and accessories, particularly sunglasses. 
 
-This trend indicates a high level of brand loyalty among customers who use Google's product lines, including Google, YouTube, and Android.
+🚀 This trend indicates a high level of brand loyalty among customers who use Google's product lines, including Google, YouTube, and Android.
 
 
 ### Query 08: Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017
 
-<img width="964" alt="Screen Shot 2025-03-03 at 10 33 57 AM" src="https://github.com/user-attachments/assets/8d058741-1dbc-4897-be5b-e03257bb99d6" />
+```sql
+WITH product_data AS(
+SELECT
+    FORMAT_DATE('%Y%m', PARSE_DATE('%Y%m%d',date)) AS month,
+    COUNT(CASE WHEN eCommerceAction.action_type = '2' THEN product.v2ProductName END) AS num_product_view,
+    COUNT(CASE WHEN eCommerceAction.action_type = '3' THEN product.v2ProductName END) AS num_add_to_cart,
+    COUNT(CASE WHEN eCommerceAction.action_type = '6' AND product.productRevenue IS NOT NULL THEN product.v2ProductName END) AS num_purchase
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_*`
+    ,UNNEST(hits) AS hits
+    ,UNNEST (hits.product) AS product
+WHERE _table_suffix BETWEEN '20170101' AND '20170331'
+      AND eCommerceAction.action_type IN ('2','3','6')
+GROUP BY 1
+ORDER BY 1
+)
+
+SELECT
+    *,
+    ROUND(num_add_to_cart/num_product_view * 100, 2) AS add_to_cart_rate,
+    ROUND(num_purchase/num_product_view * 100, 2) AS purchase_rate
+FROM product_data;
+```
 
 <img width="956" alt="Screen Shot 2025-03-03 at 10 40 03 AM" src="https://github.com/user-attachments/assets/9e7b1445-5d2d-4cc2-83c7-dd0e132baf9f" />
 
-Between January and March 2017, conversion rates from product views to add-to-cart actions and purchases improved steadily, even though there was a slight decline in the number of products viewed. March experienced the highest engagement, with a 37.29% add-to-cart rate and a 12.64% purchase rate. This enhanced efficiency in converting browsers to buyers may result from improved marketing strategies or a better user experience.
+🚀 Between January and March 2017, conversion rates from product views to add-to-cart actions and purchases improved steadily, even though there was a slight decline in the number of products viewed. March experienced the highest engagement, with a 37.29% add-to-cart rate and a 12.64% purchase rate. This enhanced efficiency in converting browsers to buyers may result from improved marketing strategies or a better user experience.
 
 ## IV. Final Conclusion & Recommendations 
 
