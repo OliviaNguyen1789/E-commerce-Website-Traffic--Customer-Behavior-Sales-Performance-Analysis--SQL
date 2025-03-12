@@ -15,7 +15,7 @@ IV. [Final Conclusion & Recommendations](#iv-final-conclusion--recommendations)
 
 ## I. Introduction
 
-This project analyzes an e-commerce dataset using advanced SQL techniques on Google BigQuery, including sliding windows, CTEs, and date-time manipulation.
+This project analyzes an e-commerce dataset using advanced SQL techniques on Google BigQuery, including Subquery, CTEs, and date-time manipulation.
 The objectives are:
 - Improving the company's revenue.
 - Understanding customer behavior to optimize conversion rates 
