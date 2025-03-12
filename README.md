@@ -1,4 +1,4 @@
-# [SQL]: Explore Ecommerce Dataset  
+# E-commerce Website Traffic - Customer Behavior & Sales Performance Analysis | SQL
 Author: [Uyen Nguyen]  
 Date: September 2024  
 Tools Used: SQL 
