@@ -15,12 +15,9 @@ IV. [Final Conclusion & Recommendations](#iv-final-conclusion--recommendations)
 
 ## I. Introduction
 
-This project analyzes an e-commerce dataset using advanced SQL techniques on Google BigQuery, including Subquery, CTEs, and date-time manipulation.
-The objectives are:
-- Improving the company's revenue.
-- Understanding customer behavior to optimize conversion rates 
+This project uses advanced SQL techniques on Google BigQuery, including Subquery, CTEs, and date-time manipulation to analyze customer behavior and sales performance from a dataset of 2,556 rows. The insights derived will support actionable recommendations to enhance marketing effectiveness and optimize sales strategies
 
-This analysis will help the Marketing and Sales teams make strategic, data-driven decisions to enhance business outcomes.
+Stakeholders: Marketing and Sales teams.
 
 ## II. Dataset Description
 
