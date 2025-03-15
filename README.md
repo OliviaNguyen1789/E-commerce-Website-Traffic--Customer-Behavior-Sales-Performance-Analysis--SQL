@@ -33,7 +33,8 @@ To access the dataset, we log in to Google Cloud Platform, navigate to the BigQu
 - Size: Over 5000 rows 
 ### 🔀  Data Structure:
   <details>
-    <summary>click here </summary>
+    <summary>Show data structure </summary>
+    
   | Field Name                       | Data Type | Description                                                                                                                 |
 |----------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------|
 | fullVisitorId                    | STRING    | The unique visitor ID. |
