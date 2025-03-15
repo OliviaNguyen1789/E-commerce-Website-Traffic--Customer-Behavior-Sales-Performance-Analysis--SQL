@@ -32,7 +32,8 @@ Marketing and Sales teams
 To access the dataset, we log in to Google Cloud Platform, navigate to the BigQuery console and enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions".
 - Size: Over 5000 rows 
 ### 🔀  Data Structure:
-  
+  <details>
+    <summary>click here </summary>
   | Field Name                       | Data Type | Description                                                                                                                 |
 |----------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------|
 | fullVisitorId                    | STRING    | The unique visitor ID. |
@@ -53,7 +54,7 @@ To access the dataset, we log in to Google Cloud Platform, navigate to the BigQu
 | hits.product.productSKU          | STRING    | Product SKU. |
 | hits.product.v2ProductName       | STRING    | Product Name.|
 
-
+  </details>
 
 ## 📊 Exploring the Dataset
 
