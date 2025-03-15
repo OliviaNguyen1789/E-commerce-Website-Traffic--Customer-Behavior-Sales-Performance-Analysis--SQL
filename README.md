@@ -9,9 +9,9 @@ Tools Used: SQL
 
 ## 📑 Table of Contents  
 I. [📌 Background & Overview](#-background--overview)  
-II. [📂 Dataset Description](#ii-dataset-description)  
-III. [📊 Exploring the Dataset](#iii-exploring-the-dataset)  
-IV. [🔎 Final Conclusion & Recommendations](#iv-final-conclusion--recommendations)
+II. [📂 Dataset Description](#-dataset-description)  
+III. [📊 Exploring the Dataset](#-exploring-the-dataset)  
+IV. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
 
 ---
 
