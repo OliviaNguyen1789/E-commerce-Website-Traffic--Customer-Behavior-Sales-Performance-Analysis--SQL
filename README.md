@@ -26,9 +26,11 @@ Marketing and Sales teams
 
 ## 📂 Dataset Description
 
-- Source: The e-commerce dataset is stored in a public Google BigQuery dataset.
-  To access the dataset, we log in to Google Cloud Platform, navigate to the BigQuery console and enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions".
--  Data Structure:
+### 🌐 Source: 
+- The e-commerce dataset is stored in a public Google BigQuery dataset.
+To access the dataset, we log in to Google Cloud Platform, navigate to the BigQuery console and enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions".
+- Size: Over 5000 rows 
+### 🔀  Data Structure:
   
   | Field Name                       | Data Type | Description                                                                                                                 |
 |----------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -55,6 +57,7 @@ Marketing and Sales teams
 ## 📊 Exploring the Dataset
 
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
+> Provide an overview of recent trends over the past few months to assess engagement levels by analyzing total visits, page views, transactions, and revenue.
 
 ```sql
 SELECT 
@@ -73,6 +76,7 @@ SELECT
 🚀 The results indicate that website traffic witnessed a significant rise in March (933), suggesting either enhanced conversion rates or seasonal influences.
 
 ### Query 02: Bounce rate per traffic source in July 2017
+> A bounce rate indicates that customers who visited the website left without making a purchase.
 
 ```sql
 SELECT
@@ -90,6 +94,7 @@ ORDER BY 2 DESC;
 🚀 The majority of traffic (80%) comes from Google and direct sources. Traffic from Google is twice that of direct sources, but the bounce rate for direct traffic is lower (43% vs. 52%). 
 
 ### Query 03: Revenue by traffic source by week, by month in June 2017
+> Calculate revenue by traffic source helps assess marketing effectiveness, identify trends, and optimize resource allocation.
 
 ```sql
 WITH monthly_revenue AS (
@@ -132,6 +137,7 @@ WITH monthly_revenue AS (
 🚀 Regarding revenue, direct traffic consistently drives the highest value weekly and monthly, while Google rank as the second-largest source.
 
 ### Query 04: Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017
+> Analyze user engagement differences between purchasers and non-purchasers to optimize conversion strategies.
 
 ```sql
 WITH
@@ -176,7 +182,7 @@ ORDER BY pd.month;
 🚀 Non-purchasers tend to browse many pages without making a purchase, indicating potential issues with usability, pricing, or the checkout process.
 
 ### Query 05: Average number of transactions per user that made a purchase in July 2017
-
+>  Assess customer loyalty and repeat purchase behavior via calculating average number of transactions.
 ```sql
 SELECT
       FORMAT_DATE('%Y%m',PARSE_DATE('%Y%m%d',date)) AS Month
@@ -194,6 +200,7 @@ SELECT
 🚀 On average, users who made a purchase in July 2017 completed 4.16 transactions.
 
 ### Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
+> Evaluate the spending behavior and profitability of customers during their sessions.
 
 ```sql
 SELECT 
@@ -213,6 +220,7 @@ SELECT
 
 
 ### Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017
+> Identify cross-selling opportunities and customer preferences to optimize product recommendations.
 
 ```sql
 SELECT 
@@ -245,6 +253,7 @@ SELECT
 
 
 ### Query 08: Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017
+> To analyze the efficiency of the buying process and customers' behavior from product view to add-to-cart to purchase within a specific time period 
 
 ```sql
 WITH product_data AS(
