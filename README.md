@@ -1,5 +1,8 @@
 <img width="1000" alt="Screen Shot 2025-03-15 at 11 02 40 PM" src="https://github.com/user-attachments/assets/8610ec6a-da97-4de0-9b21-527e2b32f6d3" />
 
+<img width="1000" alt="Screen Shot 2025-03-16 at 9 08 14 AM" src="https://github.com/user-attachments/assets/80dfa01d-4589-4129-a297-577657d7af8f" />
+
+
 
 
 # E-commerce Website Traffic - Customer Behavior & Sales Performance Analysis | SQL
