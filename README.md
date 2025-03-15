@@ -17,9 +17,12 @@ IV. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendation
 
 ## 📌 Background & Overview
 
-This project uses advanced SQL techniques on Google BigQuery, including Subquery, CTEs, and date-time manipulation to analyze customer behavior and sales performance from a dataset of 2,556 rows. The insights derived will support actionable recommendations to enhance marketing effectiveness and optimize sales strategies
+### 📖 What is this project about?
+The objective of this project is to analyze website traffic on an e-commerce platform to gain deeper insights into customer behavior and sales performance. This involves conducting a comprehensive traffic analysis and multi-channel evaluation, leveraging SQL techniques on Google BigQuery - Subquery, CTEs, and date-time manipulatio - to extract meaningful insights. The findings will be used to provide data-driven recommendations aimed at optimizing marketing strategies and enhancing overall business performance.
 
-Stakeholders: Marketing and Sales teams.
+### 👤 Who is this project for?  
+Marketing and Sales teams
+
 
 ## 📂 Dataset Description
 
@@ -27,8 +30,8 @@ Stakeholders: Marketing and Sales teams.
   To access the dataset, we log in to Google Cloud Platform, navigate to the BigQuery console and enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions".
 -  Data Structure:
   
-  | Field Name                       | Data Type | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|----------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | Field Name                       | Data Type | Description                                                                                                                 |
+|----------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------|
 | fullVisitorId                    | STRING    | The unique visitor ID. |
 | date                             | STRING    | The date of the session in YYYYMMDD format.|
 | totals                           | RECORD    | This section contains aggregate values across the session. |
