@@ -1,4 +1,4 @@
-<img width="744" alt="Screen Shot 2025-03-15 at 3 39 56 PM" src="https://github.com/user-attachments/assets/9c9d7b18-ba4c-4563-a2af-c865eea94aac" />
+
 
 # E-commerce Website Traffic - Customer Behavior & Sales Performance Analysis | SQL
 Author: [Uyen Nguyen]  
