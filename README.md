@@ -8,20 +8,20 @@ Tools Used: SQL
 ---
 
 ## 📑 Table of Contents  
-I. [Introduction](#i-introduction)  
-II. [Dataset Description](#ii-dataset-description)  
-III. [Exploring the Dataset](#iii-exploring-the-dataset)  
-IV. [Final Conclusion & Recommendations](#iv-final-conclusion--recommendations)
+I. [📌 Background & Overview](#-background--overview)  
+II. [📂 Dataset Description](#ii-dataset-description)  
+III. [📊 Exploring the Dataset](#iii-exploring-the-dataset)  
+IV. [🔎 Final Conclusion & Recommendations](#iv-final-conclusion--recommendations)
 
 ---
 
-## I. Introduction
+## 📌 Background & Overview
 
 This project uses advanced SQL techniques on Google BigQuery, including Subquery, CTEs, and date-time manipulation to analyze customer behavior and sales performance from a dataset of 2,556 rows. The insights derived will support actionable recommendations to enhance marketing effectiveness and optimize sales strategies
 
 Stakeholders: Marketing and Sales teams.
 
-## II. Dataset Description
+## 📂 Dataset Description
 
 - Source: The e-commerce dataset is stored in a public Google BigQuery dataset.
   To access the dataset, we log in to Google Cloud Platform, navigate to the BigQuery console and enter the project ID "bigquery-public-data.google_analytics_sample.ga_sessions".
@@ -49,7 +49,7 @@ Stakeholders: Marketing and Sales teams.
 
 
 
-## III. Exploring the Dataset
+## 📊 Exploring the Dataset
 
 ### Query 01: Calculate total visit, pageview, transaction and revenue for January, February and March 2017 order by month
 
@@ -270,7 +270,7 @@ FROM product_data;
 
 🚀 Between January and March 2017, conversion rates from product views to add-to-cart actions and purchases improved steadily, even though there was a slight decline in the number of products viewed. March experienced the highest engagement, with a 37.29% add-to-cart rate and a 12.64% purchase rate. This enhanced efficiency in converting browsers to buyers may result from improved marketing strategies or a better user experience.
 
-## IV. Final Conclusion & Recommendations 
+## 🔎 Final Conclusion & Recommendations 
 
 This analysis offers valuable insights into customer behavior, sales patterns, and website performance, enabling businesses to identify effective marketing and sales strategies to optimize their performance. To enhance revenue, the following recommendations are proposed:
 
