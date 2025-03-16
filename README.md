@@ -2,7 +2,7 @@
 <img width="1000" alt="Screen Shot 2025-03-16 at 9 08 14 AM" src="https://github.com/user-attachments/assets/80dfa01d-4589-4129-a297-577657d7af8f" />
 
 
-# E-commerce Website Traffic - Customer Behavior & Sales Performance Analysis | SQL
+# Project Title: E-commerce Website Traffic - Customer Behavior & Sales Performance Analysis | SQL
 Author: [Uyen Nguyen]  
 Date: September 2024  
 Tools Used: SQL 
