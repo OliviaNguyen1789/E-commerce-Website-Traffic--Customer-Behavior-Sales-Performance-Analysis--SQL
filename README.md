@@ -3,7 +3,7 @@
 
 
 # Project Title: E-commerce Website Traffic - Customer Behavior & Sales Performance Analysis | SQL
-Author: [Uyen Nguyen]  
+Author: [Olivia Nguyen]  
 Date: September 2024  
 Tools Used: SQL 
 
